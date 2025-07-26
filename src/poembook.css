@@ -3,9 +3,7 @@
 *::after {
   box-sizing: border-box;
 }
-*{
-    font-family: 'Comic Sans MS', cursive, sans-serif !important;
-}
+
 .poembook-container {
     display: flex;
     justify-content: center;
