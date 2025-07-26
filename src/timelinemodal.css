@@ -96,8 +96,16 @@
     font-weight: bold;
     color: #000;
   }
-
+ .kGVMxQ {
+  padding:0.5em;
+ }
   @media screen and (max-width: 767px) and (orientation: portrait){
+    .ikNgpC {
+      padding:0;
+    }
+    .ifPjGA {
+      width:10% !important;
+    }
 .WakbS {
   margin:0;padding:0;min-width: 150px;
 }
@@ -114,6 +122,12 @@
     flex-direction: column;
 }
  .kGVMxQ {
-  height:400px !important;
+  padding:0.5em;
+  height:50% !important;
+ }
+ .faXSto{
+  width:100% !important;
+    height:40% !important;
+
  }
 }
