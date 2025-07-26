@@ -125,7 +125,6 @@ height:230px;
     border: 1px solid #dac888;
     border-radius: 8px;
     transform: rotate(-3deg); /* Slight tilt for cute effect */
-    font-family: 'Comic Sans MS', cursive, sans-serif; /* Cute font */
     font-size: 16px;
     color: #333333;
     z-index: 1000;
