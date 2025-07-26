@@ -208,7 +208,8 @@ body {
 /* Mobile View (e.g., phones) */
 @media screen and (max-width: 767px) and (orientation: portrait){
   .body {
-    height:100vh !important;
+    min-height: 100dvh;
+    justify-content: space-between;
     overflow:hidden !important;
     height: auto;
   }
