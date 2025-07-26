@@ -2,7 +2,6 @@ import React from 'react';
 import HTMLFlipBook from 'react-pageflip';
 import elogo from './static/elogo.png'
 import one from './static/onetoone.png'
-import mov from './static/Englive.mov'
 import arrow from './static/arrow.png';
 import BlurText from "./BlurText";
 import './elbook.css';
