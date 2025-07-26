@@ -1,0 +1,60 @@
+.card-swap-container {
+    margin-top:120px;margin-left:390px;
+    position: relative;
+    bottom: 0;
+    right: 0;
+    transform: translate(5%, 20%);
+    transform-origin: bottom right;
+  
+    perspective: 900px;
+    overflow: visible;
+  }
+  
+  .card {
+    height:200px !important;
+    width:350px !important;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    border-radius: 12px;
+    border: 1px solid #fff;
+    background: #000;
+  
+    transform-style: preserve-3d;
+    will-change: transform;
+    backface-visibility: hidden;
+  }
+  
+  @media (max-width: 768px) {
+    .card-swap-container {
+      transform: scale(0.75) translate(25%, 25%);
+    }
+  }
+  
+  @media (max-width: 480px) {
+    .card-swap-container {
+      transform: scale(0.55) translate(25%, 25%);
+    }
+  }
+  .forceAbsolute{
+    position: absolute !important;
+    top: 0 !important;
+    left: 0 !important;
+  }
+  .fxModalBody{
+    justify-content:center;
+    position:relative;
+  }
+  .card1{
+    background-image: url('./static/cs5.png');
+    background-size:cover ;
+    padding:20px;
+}.card2{
+    background-image: url('./static/cs6.png');
+    background-size:cover ;
+    padding:20px;
+}.card3{
+    background-image: url('./static/cs7.png');
+    background-size:cover ;
+    padding:20px;
+}

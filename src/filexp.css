@@ -1,0 +1,270 @@
+/* Modal Overlay */
+.fxModalOverlay {
+    position: fixed;
+    top: 0; left: 0; right: 0; bottom: 0;
+    background: rgba(0, 0, 0, 0.5);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    z-index: 2000;
+  }
+  
+  /* Modal Box */
+  .fxModalContainer {
+    background-color: #1e1e1e;
+    width: 80%;
+    max-width: 900px;
+    border-radius: 8px;
+    overflow: hidden;
+    display: flex;
+    flex-direction: column;
+    animation: fxPopup 0.3s ease-in-out;
+  }
+  
+  /* Header */
+  .fxModalHeader {
+    background-color: #2e2e2e;
+    padding: 10px 20px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    color: white;
+    
+  }
+  .fximg{
+    height:7vh;width:7vh;
+}
+  /* Close Button */
+  .fxCloseBtn {
+    background: none;
+    border: none;
+    color: white;
+    font-size: 20px;
+    cursor: pointer;
+    transition: transform 0.2s ease;
+  }
+  
+  .fxCloseBtn:hover {
+    transform: scale(1.2);
+  }
+  
+  /* Body */
+  .fxModalBody {
+    margin-left:2vh;
+    display: flex;
+    height: 150px;
+  }
+  
+  /* Sidebar */
+  .fxSidebar {
+    width: 200px;
+    background-color: #292929;
+    padding: 20px;
+    color: white;
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+  }
+  
+  /* Main Content */
+  .fxMainContent {
+    flex: 1;
+    background-color: #252526;
+    display: flex;
+    flex-wrap: wrap;
+    gap: 40px;
+    padding: 20px;
+    align-content: flex-start;
+  }
+  
+  .fxFolder {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    color: white;
+    cursor: pointer;
+    transition: transform 0.2s ease;
+  }
+  
+  .fxFolder:hover {
+    transform: scale(1.1);
+  }
+  
+  /* Footer */
+  .fxModalFooter {
+    background-color: #2e2e2e;
+    padding: 10px 20px;
+    display: flex;
+    justify-content: space-between;
+    color: white;
+    font-size: 12px;
+  }
+  
+  /* Popup Animation */
+  @keyframes fxPopup {
+    0% { transform: scale(0.7); opacity: 0; }
+    100% { transform: scale(1); opacity: 1; }
+  }
+  .iconBox{
+    margin-left:0vh;
+    width:fit-content;
+    margin-top:15px;
+    height: 110px;
+    display:flex;
+    flex-direction:row;
+    flex-wrap: wrap;
+  }
+
+.resta{
+    width:300px;
+    height:20px;
+}
+  .abouta{
+    width:300px;
+  }
+  /* .custom-cont{
+     position:relative ;
+    height:10vh;width:6vw;
+    display:flex;
+    flex-direction:column;
+    justify-items:center;
+  } */
+  .folder-wrapper {
+    width: 18vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin: 10px;
+  }
+  
+  .folder-label {
+    top: 15px;
+    position: relative;
+    left: -2.7vw;
+    /* margin: 3vh; */
+    margin-top: 22px;
+    font-size: 14px;
+    color: #fff;
+    text-align: center;
+  }
+  .folder-label-about{
+    top: -4.5vh;
+    left: 0;
+    position: relative;
+    left: -3vw;
+    /* margin: 3vh; */
+    margin-top: 22px;
+    font-size: 14px;
+    color: #fff;
+    text-align: center;
+  }
+.recents{
+    height:200px;
+    width:900px;
+}
+.extrac{
+  left:-5.5vh;
+  top:15px;
+
+}
+
+@media screen and (max-width: 767px) and (orientation: portrait){
+.iconBox{
+    margin-left:1vh;
+    width:fit-content;
+    margin-top:15px;
+    height: 110px;
+    display:flex;
+    flex-direction:row;
+    flex-wrap: wrap;
+  }
+  .folder-wrapper {
+    width: 18vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin: 10px;
+  }
+  .folder{
+    display:block;
+        width: 10vh;
+  }
+  .extrac{
+    
+    top:1vh;
+  }
+    .folder-label {
+    position: relative;
+    left: 0.5vw;
+    /* margin: 3vh; */
+    margin-top: 25px;
+    font-size: 13px;
+    color: #fff;
+    text-align: center;
+  }
+  .folder-label-about{
+    /* top: -4.5vh; */
+    left: 0;
+    position: relative;
+    /* left: -3vw; */
+    /* margin: 3vh; */
+    margin-top: 22px;
+    font-size: 14px;
+    color: #fff;
+    text-align: center;
+  }
+  .resta{
+    width:100px;
+    height:20px;
+}
+  .fximg{
+    height:7vh;width:7vh;
+}
+
+  /* Body */
+  .fxModalBody {
+    margin-left:2vh;
+    display: flex;
+    height: 170px;
+  }
+
+  
+  .fxFolder {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    color: white;
+    cursor: pointer;
+    transition: transform 0.2s ease;
+  }
+  
+  .fxFolder:hover {
+    transform: scale(1.1);
+  }
+  
+  /* Footer */
+  .fxModalFooter {
+    background-color: #2e2e2e;
+    padding: 10px 20px;
+    display: flex;
+    justify-content: space-between;
+    color: white;
+    font-size: 8px;
+  }
+}
+ /* Mobile View (e.g., phones) */
+@media (max-width: 767px) {
+  .fxModalContainer{
+    height:60vh;
+  }
+  .iconBox{
+    margin-top:0px;
+  }
+  .folder-wrapper{
+    width: 15vh;
+  }
+  .folder-label{
+    top:1vh;
+    /* left:-4vh; */
+  }
+}

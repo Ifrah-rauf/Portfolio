@@ -1,0 +1,268 @@
+.tmbook-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    align-content: center;
+    width: 100%;
+    height: 100vh;
+}
+
+.tmbook-page {
+    border-radius: 10px;
+    background-image: url('./static/paper.png');
+    background-size: cover;
+    background-color: rgb(253, 253, 253);
+    width: 100%;
+    height: 100%;
+    text-align: center;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    /* Optional: slight outer shadow for lift */
+    box-shadow: 0 28px 25px rgba(0, 0, 0, 0.372);
+}
+
+
+.tm {
+    margin-top: 10vh;
+    height: 35vh;
+    width: 20vw;
+    z-index: 2;  /* Ensure content is above the shadow */
+}
+.page1{
+    padding:5vh;
+    font-size:3vh;
+
+
+}
+.page2{
+    display:flex;
+    justify-items:center;
+}
+.track{
+    height:12vh;width:6vw;
+    position: fixed;
+    bottom: 0vh;   
+    right: 0vw;     
+    /* width: 8vw;      
+    height: auto;   */
+    cursor: pointer;
+    z-index: 1000    ;
+}
+.track2{
+    height:12vh;width:6vw;
+    position: fixed;
+    top: 0vh;   
+    left: 0vw;     
+    /* width: 8vw;      
+    height: auto;   */
+    cursor: pointer;
+    z-index: 1000    ;
+    transform:rotate(180deg);
+}
+.blur{
+    font-size:40px;
+    margin:6vh;
+}
+.sticky-note-tmbook1 {
+    height:240px;width:350px;
+    margin:5px;
+    background: rgb(72 154 192);
+    padding: 1rem;
+    box-shadow: 5px 5px 10px rgba(0,0,0,0.3);
+    transform: rotate(-5deg);
+  }
+  .dashed{
+    /* margin:2vh; */
+    height:15vh;width:30vw;
+    border: 2px dashed #255790;
+    border-radius: 12px;  /* Use px for subtle rounding */
+    padding: 12px;
+  }
+  .detail{
+    position:relative;
+    left:6vh;
+  }
+  .dashedh1{
+    margin:0;
+    font-size:14px;
+  }
+  .train{
+    height:22vh;
+  }
+  .tmarrow1{
+    position: fixed;
+    left:2vw;top:5vh;
+    height:13vh;width:8vw;
+  }
+  .tmvideo{
+    border:4px solid rgb(53, 53, 53);
+    border-radius:18px;
+    margin-top:15vh;
+  width:400px;
+height:230px;
+  }
+  .tm2{
+    height:38vh;width:94%;position:relative;top:4vh;
+
+  }
+  .page4{
+    display:flex;
+    justify-items: center;
+  }
+  .tmsticky-note {
+    position: fixed; /* Or absolute if inside a container */
+    top: 5vh;
+    left: 5vw;
+    width: 25vw;
+    max-width: 300px;
+    /* min-width: 150px; */
+    min-height: 150px;
+    padding: 20px;
+    background-color: #fff9b0; /* Soft yellow sticky note */
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.2);
+    border: 1px solid #dac888;
+    border-radius: 8px;
+    transform: rotate(-3deg); /* Slight tilt for cute effect */
+    font-family: 'Comic Sans MS', cursive, sans-serif; /* Cute font */
+    font-size: 16px;
+    color: #333333;
+    z-index: 1000;
+    cursor: pointer;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.tmsticky-note:hover {
+    transform: rotate(0deg) scale(1.05);
+    box-shadow: 0 8px 20px rgba(0, 0, 0, 0.3);
+}
+
+.sticky-pin {
+    width: 20px;
+    position: absolute;
+    top: -10px;
+    left: 50%;
+    transform: translateX(-50%);
+}
+.tech{
+
+  height: auto;
+  width: auto;
+  font-size: 2vh;
+  text-align: left;
+  margin: 4vh;
+  color: #27619f;
+}
+.techHead{
+  margin:5vh;
+}
+.third {
+  height:50px;
+    transform: rotate(-6deg);
+    background-color: rgb(243, 230, 183);
+    top: 55vh;
+    left: 5vw;
+    font-size: 2vh;
+}
+/* .ytp-title-link {
+  height:300px;;
+  width:500px;
+} */
+@media screen and (max-width: 767px) and (orientation: portrait){
+.detail{
+    position:relative;
+    left:0;
+  }
+.tm {
+    margin-top: 10vh;
+    height: 35vh;
+    width: 60vw;
+    z-index: 2;
+}
+.page1{
+  font-size:2vh;
+}
+  .tmarrow1{
+    position: fixed;
+    left:32vw;top:5vh;
+    height:13vh;width:18vw;
+  }
+.blur{
+  width:260px;
+  font-size:4vh;
+}
+.dashed{
+  width:50vw;
+  height:auto;
+}
+.ui{
+  position: relative;
+  top:-10vh;
+  margin:0;
+}
+.dashedh1{
+  font-weight:lighter;
+  font-size:13px;
+  margin:0;
+}
+.track {
+    width: 20vw;
+    position: absolute;
+    bottom: 0vh;
+}
+.arrow1 {
+    left: 30vw;
+    position: absolute;
+    width: 20vw;
+}
+.tmvideo{
+  height:auto;
+  margin:7vh;
+  width:280px;
+}
+.page3{
+  display:flex !important;
+  flex-direction: column;
+}
+
+element.style {
+    margin: 2vh;
+}
+.tmsticky-note {
+    position: fixed;
+    left: 28vw;
+    width: 75vw;}
+.tm2 {
+    /* transform: rotate(-90deg); */
+    height: 25vh;
+    width: auto;
+    position: relative;
+    top: 2vh;
+}
+
+.third {
+  height:50px;
+    transform: rotate(-6deg);
+    background-color: rgb(243, 230, 183);
+    top: 60vh;
+    left: 29vw;
+    font-size: 2vh;
+}
+.tech{
+
+  height: auto;
+  width: 60vw;
+  font-size: 2vh;
+  text-align: left;
+  margin: 1vh;
+  color: #27619f;
+}
+.techHead{
+  margin:1vh;
+}
+.page6{
+  display:flex !important;
+  flex-direction:column;
+}
+}

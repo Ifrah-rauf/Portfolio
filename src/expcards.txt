@@ -1,0 +1,117 @@
+// ExperienceCards.js
+import React from "react";
+import "./expcards.css";
+import exp1 from "./static/exp1.png";
+import exp2 from "./static/exp2.png";
+import exp3 from "./static/exp3.jpg";
+import exp4 from "./static/exp4.png";
+import exp5 from "./static/exp5.png";
+import { useEffect } from "react";
+const experiences = [
+//   {
+//     id: 1,
+//     title: "Frontend Developer Internship at IBM",
+//     date: "25 June 2024 - 5 August 2024",
+//     description: "Worked on developing responsive and intuitive website designs using basic technologies HTML, CSS and JS and submitted my project VikasVaani, a dynamic site built during intern period of 1 month.",
+//     image:exp1
+//   },
+//   {
+//     id: 2,
+//     title: "Started my Youtube Channel",
+//     date: "Feb, 2023",
+//     description: "I wanted to fulfill my everlasting desire of teaching, so I used youtube for it! Taught Technical Communication and Fundamentals of IT. I never thought I could gain popularity outisde my social circles. Uploaded only two videos atfirst, but on request of my juniors, I gave it a shot and made more!",
+//     image: exp5
+//   },
+//   {
+//     id:3 ,
+//     title: "Design Head at Literary Society, VSIT Department ",
+//     date: "2023-25",
+//     description: "I was much into frontend, like many of my colleagues. But I could make it far enough to be the Lead. I deeply made understanding of how to capture attention, color theory, typography and much more and guided my juniors.",
+//     image:exp4
+//   },
+//   {
+//     id: 4,
+//     title: "Smart India Hackathon",
+//     date: "2 September, 2024",
+//     description: "It remained as an experience of a great idea, that we couldn't manage to convince... Few months later we discovered our idea was implemented in fact by Uber Company, which ensured credibility of idea.  Our project focused on women safety in taxi services, by intrdoucing women to women scheme, Advanced authentication of drivers through ratings and review system and using public data and analytics to mark threatening places on geolocations. This project was heavily based on Data Science technologies.",
+//     image:exp2
+//   },
+//   {
+//     id: 5,
+//     title: "Vihaan007 Hackathon, DTU",
+//     date: "23 February, 2024",
+//     description: "This was my first Hackathon, but not for my team-mates. Our idea was to create a Smart Homes ecosystem, with advanced safety features and necessary automations. We couldn;t win but atleast gave me hope for some more competitions ahead.",
+//     image:exp3
+//   },
+{
+        id: 5,
+        title: "Vihaan007 Hackathon, DTU",
+        date: "23 February, 2024",
+        description: "hi hello 1",
+        image:exp3
+      },
+      {
+        id: 5,
+        title: "Vihaan007 Hackathon, DTU",
+        date: "23 February, 2024",
+        description: "hi hello 1",
+        image:exp3
+      },
+      {
+        id: 5,
+        title: "Vihaan007 Hackathon, DTU",
+        date: "23 February, 2024",
+        description: "hi hello 1",
+        image:exp3
+      },
+];
+
+export default function Expcards() {
+    useEffect(() => {
+        // intersection observer
+        const observer = new IntersectionObserver((entries) => {
+          entries.forEach((entry) => {
+            entry.target.classList.toggle("visible", entry.isIntersecting);
+          });
+        }, { threshold: 0.7 });
+        
+        const cards = document.querySelectorAll(".experience-card");
+        cards.forEach(card => observer.observe(card));
+        
+        // scroll rewind logic
+        const scrollContainer = document.querySelector('.experience-scroll-container');
+        const handleScroll = () => {
+          if (
+            scrollContainer.scrollTop + scrollContainer.clientHeight >= scrollContainer.scrollHeight
+          ) {
+            setTimeout(() => {
+              scrollContainer.scrollTo({ top: 0, behavior: 'smooth' });
+            }, 500); // optional delay
+          }
+        };
+        scrollContainer.addEventListener('scroll', handleScroll);
+      
+        // cleanup
+        return () => {
+          observer.disconnect();
+          scrollContainer.removeEventListener('scroll', handleScroll);
+        };
+      }, []);
+      
+  return (
+    <div className="experience-scroll-container">
+      {experiences.map((exp) => (
+        <div className="experience-card" key={exp.id}>
+          <div className="experience-text">
+            <h2>{exp.title}</h2>
+            <p className="exp-date">{exp.date}</p>
+            <p>{exp.description}</p>
+          </div>
+          <div className="experience-image">
+            <img src={exp.image} alt={exp.title} />
+          </div>
+        </div>
+      ))}
+    </div>
+  );
+}

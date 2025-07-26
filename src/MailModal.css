@@ -1,0 +1,75 @@
+.mailOverlay {
+    position: fixed;
+    top: 0; left: 0; right: 0; bottom: 0;
+    background: rgba(0,0,0,0.5);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    z-index: 2000;
+  }
+  
+  .mailContainer {
+    background: #f7f7f7;
+    width: 95%;
+    max-width: 700px;
+    border-radius: 8px;
+    animation: fxPopup 0.3s ease-in-out;
+    display: flex;
+    flex-direction: column;
+  }
+  
+  .mailHeader {
+    background: #2e2e2e;
+    color: #fff;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px 20px;
+  }
+  
+  .mailBody {
+    padding: 20px;
+  }
+  
+  .mailBody form {
+    display: flex;
+    flex-direction: column;
+  }
+  
+  .mailBody input,
+  .mailBody textarea {
+    margin: 10px 0;
+    padding: 8px;
+    border-radius: 4px;
+    border: none;
+    width: 100%;
+  }
+  
+  .mailBody textarea {
+    resize: vertical;
+    min-height: 100px;
+  }
+  
+  .mailButtons {
+    display: flex;
+    justify-content: flex-end;
+    gap: 10px;
+    margin-top: 10px;
+  }
+  .mailButtons button{
+    border:none;
+  }
+  
+  .fxCloseBtn {
+    background: none;
+    border: none;
+    color: #fff;
+    font-size: 20px;
+    cursor: pointer;
+  }
+  .mailButton{
+    cursor:pointer;
+    background-color:transparent;
+    border:none;
+  }
+  

@@ -1,0 +1,113 @@
+.experience-scroll-container {
+    margin-top:2vh;
+    height: 80vh;                /* slightly smaller than full screen */
+    overflow-y: auto;
+    scroll-snap-type: y mandatory;
+    scrollbar-width: none;       /* Firefox */
+    -ms-overflow-style: none;    /* IE/Edge */
+  }
+  .experience-scroll-container::-webkit-scrollbar {
+    display: none;               /* Chrome/Safari */
+  }
+  .chromacardbody{
+     height:auto; width:60vw;position: relative;
+  }
+  .experience-card {
+    color:white;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color:transparent;
+    border-radius: 10px;
+    /* margin-top:10vh; */
+    margin: 1rem 0;
+    padding: 1rem;
+    height: 30vh;                 /* reduced so multiple show up */
+    scroll-snap-align: start;
+    scroll-snap-type: y mandatory;
+    scroll-padding: 0 0 20vh 0;     
+    /* box-shadow: 0 2px 8px rgba(0,0,0,0.2); */
+    transition: transform 0.5s ease, opacity 0.5s ease;
+  }
+  
+  /* image on right side */
+  .experience-card img {
+    /* height: 100%; */
+    height:30vh;width:40vh;
+    /* width: auto; */
+    margin-top:5vh;
+    border-radius: 8px;
+    margin-left: 1rem;
+    object-fit: cover;
+    object-position: center;
+  }
+  
+  /* text block on left side */
+  .experience-text {
+    font-size: 11px;
+    flex: 1;
+    padding-right: 1rem;
+  }
+  
+  /* animation on scroll using intersection observer */
+  .experience-card.visible {
+    opacity: 1;
+    transform: translateY(0);
+  }
+  .experience-card {
+    opacity: 0;
+    transform: translateY(50px);
+  }
+    .vihaan{
+  visibility: hidden;
+  opacity:0;
+  }
+  @media screen and (max-width: 767px) and (orientation: portrait){
+     .vihaan{
+  visibility: hidden;opacity:0;
+  height:250px !important;
+  }
+ .chromacardbody{
+     /* height:auto;   */
+     width:100vw;
+     position: relative;
+  }
+  .chroma-card{
+    padding:2px;
+    display:flex;
+    flex-direction: column;
+    align-items:center;
+    width:80vw;
+    height:max-content;
+    border-radius:20px;
+  }
+  .experience-text {
+    font-size: 8px;}
+    .name{
+      font-size:13px;
+      margin:2px;
+    }
+    .handle{
+      font-size:11px;
+    }
+    .role{
+      font-size:10px;
+    }
+    .chroma-img-wrapper img {
+    align-items: center;
+    display: flex;
+    width: auto;
+    height: 100px;
+    object-fit: contain;
+    border-radius: 10px;
+    display: block;
+}
+.chroma-img-wrapper {
+    height: 100px;
+    padding: 10px;
+    box-sizing: border-box;
+    background: transparent;
+    transition: background 0.3s ease;
+}
+  }
+ 

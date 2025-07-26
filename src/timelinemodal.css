@@ -1,0 +1,119 @@
+/* TimelineModal.css */
+.hJMJxA {
+    
+    color:#ffffff !important;
+}
+
+.modal-overlay {
+    position: fixed;
+    top: 0;
+    left: 0;
+    height: 100vh;
+    width: 100vw;
+    background: rgba(0, 0, 0, 0.6);
+    backdrop-filter: blur(6px);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    z-index: 999;
+  }
+  
+  .timeline-modal {
+    background-color: #ededed;
+    border-radius: 1rem;
+    padding: 2rem;
+    width: 68vw;
+    max-height: 90vh;
+    overflow-y: auto;
+    box-shadow: 0 8px 24px rgba(0, 0, 0, 0.25);
+    transform: translateZ(0);
+    will-change: scroll-position;
+    scroll-behavior: smooth;
+    position: relative;
+    overflow-x:hidden !important;
+
+  }
+  
+  .timeline-heading {
+    font-size: 1.8rem;
+    font-weight: bold;
+    margin-bottom: 1.5rem;
+    color: #1c1c1c;
+    text-align: center;
+    text-shadow: 0 1px 2px rgba(0, 0, 0, 0.1);
+  }
+  
+  .close-btn {
+    position: absolute;
+    top: 1rem;
+    right: 1rem;
+    background-color: #ffd447;
+    border: none;
+    padding: 0.3rem 0.6rem;
+    /* font-weight: bold; */
+    font-size:8px;
+    border-radius: 8px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+  }
+  
+  .close-btn:hover {
+    background-color: #ffcb29;
+  }
+  
+  /* React Chrono customizations */
+  .chrono-icons {
+    border: 2px solid #deaa00;
+    background-color: #fff !important;
+    color: #000;
+  }
+  .ejPHdW.active{
+    color:rgb(218, 186, 5) !important;
+  }
+  .jbyDlu.active {
+    color:rgb(218, 186, 5) !important;
+  }
+  .chrono-card {
+    height:200px;
+    border-radius: 10px !important;
+    overflow: hidden !important;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.15) !important;
+  }
+  
+  .chrono-card img {
+    max-width: 100%;
+    height: auto;
+    display: block;
+    border-bottom: 1px solid #eee;
+  }
+  
+  .chrono-card-title,
+  .chrono-card-subtitle {
+    color: #333 !important;
+  }
+  
+  .chrono-title {
+    font-weight: bold;
+    color: #000;
+  }
+
+  @media screen and (max-width: 767px) and (orientation: portrait){
+.WakbS {
+  margin:0;padding:0;min-width: 150px;
+}
+.fdfcAH {margin:0;
+  min-width: 150px;
+}
+.kukjQY {min-width: 150px;}
+.jcAwW {justify-content:space-around;}
+.LxoUl {
+    position: relative;
+    left: -50px;
+    width: 280px !important;
+    align-items: flex-start;
+    flex-direction: column;
+}
+ .kGVMxQ {
+  height:400px !important;
+ }
+}

@@ -1,0 +1,302 @@
+/* pdfPage.css */
+@import url('https://fonts.googleapis.com/css2?family=Dancing+Script:wght@400..700&display=swap');
+*{
+    font-family:'Trebuchet MS';
+}
+.pdf-page {
+  position: relative;
+    width: 550px;        
+    height:93em;
+    padding: 20px;
+    margin: 10px auto;
+    border: 1px solid #ddd;
+    border-radius: 10px;
+    box-shadow: 0 0 5px rgba(0, 0, 0, 0.1);
+    background-image:url('./static/aboutbg.png');
+    background-size: contain;
+    z-index:2000;
+  }
+  
+  .pdf-content {
+    z-index:2000;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    height:93em;
+  }
+  
+  .pdf-header, .pdf-footer {
+    text-align: center;
+    padding: 10px 0;
+    font-weight: bold;
+  }
+  
+  .pdf-body {
+    flex: 1;
+    padding: 10px 0;
+    height:93em;
+  }
+  
+  @media print {
+    body {
+      margin: 0;
+      box-shadow: none;
+    }
+    .pdf-page {
+      box-shadow: none;
+      border: none;
+      margin: 0;
+      page-break-after: always;
+    }
+  }
+  
+.a1{
+    height:300px;width:250px;
+    margin-top:30px;
+        margin-left:85px;
+        height:530px;width:350px;
+}
+.s1{
+  position:relative;
+  height:20vh;width:10vw;
+  top:-30vh;
+  left:50vh;
+  transform: rotate(30deg);
+}
+.section1{
+    position: relative;
+    height:85vh;width:450px;
+    p{
+        color:white;
+        mix-blend-mode: difference;
+        text-align:center;
+        margin-left:40px;
+        font-size:50px;
+        font-weight: bolder;
+        letter-spacing: 2px;
+    }
+}
+.blobshape {
+    margin-top:-160px;
+    width: 500px;
+    height: 550px;
+    background-color: rgb(45 73 86);
+    border-radius: 70% 50% 100% 30% / 10% 10% 50% 30%;
+  }
+.boxes{
+    padding:7px;
+    color:white;
+    height:40px;width:150px;
+    border-radius: 8px;
+    border: 2px solid white;
+    margin:5px;
+}
+.section2{
+    display: flex;
+    flex-direction: row;
+    justify-content:space-between ;
+}
+.sticky-note {
+    height:240px;width:350px;
+    margin:5px;
+    background: rgb(72 154 192);
+    padding: 1rem;
+    box-shadow: 5px 5px 10px rgba(0,0,0,0.3);
+    transform: rotate(-5deg);
+  }
+.sticky-note2{
+    background-color:rgb(45 73 86);
+    transform: rotate(5deg);
+    margin-left:200px;
+    height:240px;width:300px;
+    margin:5px;
+    padding: 1rem;
+    box-shadow: 5px 5px 10px rgba(0,0,0,0.3);
+  }
+.section3{
+    display: flex;
+    flex-direction: row;
+    margin:45px;
+    margin-top:-40px;
+    height:230px;width:350px;
+    span{
+      width:350px;
+    }
+}
+.section4{
+    display: flex;
+    align-items: flex-end;
+    flex-direction: row;
+    margin:45px;
+    margin-top:-30px;
+    margin-left:100px;
+    height:100px;width:350px;
+    position:relative;
+    top:-60vh;
+}
+/* rgb(72 154 192); */
+
+.section5{
+  border-radius:8px;
+  background-color:#eeeded9c;
+  /* text-shadow: 1px 1px 3px rgba(69, 69, 69, 0.671); */
+  position:relative;
+  top:-50vh;
+    color:rgb(45 73 86);
+    height:100px;width:500px;
+    span{
+        font-size:15px;
+        line-height: 1.2;
+        font-weight:bolder;
+    }
+}
+.q{
+    height:10px;width:20px;
+}
+.q2{
+    height:10px;width:20px;
+    transform: rotate(180deg);
+}
+
+.multi{
+  height:90vh;
+  position:relative;
+  top: -30vh;
+  left:20vw;
+  margin:0;
+}
+.multi2{
+  height: 90vh;
+    position: absolute;
+    bottom: 0;
+    transform: translateX(-55%);
+    bottom: -540vh;
+    bottom: -40vh;
+}
+
+@media screen and (max-width: 767px) and (orientation: portrait){
+  .pdf-page {
+    position: relative;
+    width: 330px;        
+    height:93em;
+    padding: 20px;
+    margin: 10px auto;
+    border: 1px solid #ddd;
+    border-radius: 10px;
+    box-shadow: 0 0 5px rgba(0, 0, 0, 0.1);
+    background-image:url('./static/aboutbg.png');
+    background-size: contain;
+    z-index:2000;
+  }
+  .section1{
+    position: relative;
+    height:70vh;width:300px;
+    p{
+      font-size:30px;
+      margin-top:14px;
+      color:white;
+      mix-blend-mode: difference;
+      text-align:center;
+      margin-left:10px;
+      font-weight: bolder;
+      letter-spacing: 2px;
+    }
+  }
+  .pdf-body {
+    flex: 1;
+    height:93em;
+  }
+    .pdf-content {
+    z-index:2000;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    height:93em;
+  }
+  .blobshape {
+    margin-top:-160px;
+    width: 288px;
+    height: 550px;
+    background-color: rgb(45 73 86);
+    border-radius: 70% 50% 100% 30% / 10% 10% 50% 30%;
+  }
+  .boxes{
+    padding:2px;
+    color:white;
+    height:30px;width:120px;
+    border-radius: 8px;
+    border: 2px solid white;
+    margin:5px;
+}
+.a1{
+    height:300px;width:250px;
+    margin-top:30px;
+    margin-left:6px;
+    height:530px;width:350px;
+  }
+  .sticky-note {
+    height:240px;width:300px;
+    margin:5px;
+    background: rgb(72 154 192);
+    padding: 1rem;
+    box-shadow: 5px 5px 10px rgba(0,0,0,0.3);
+    transform: rotate(-5deg);
+  }
+  .sticky-note2{
+    position:relative;
+    top:-250px;
+    background-color:rgb(45 73 86);
+    transform: rotate(5deg);
+    margin-left:200px;
+    height:120px;width:300px;
+    margin:5px;
+    /* padding: 1rem; */
+    box-shadow: 5px 5px 10px rgba(0,0,0,0.3);
+  }
+  .multi{
+  height:55vh;
+  position:relative;
+  top: -20vh;
+  left:45vw;
+  margin:0;
+  }
+  .multi2{
+    height: 90vh;
+      position: absolute;
+      bottom: 0;
+      transform: translateX(-55%);
+      bottom: -540vh;
+      bottom: -40vh;
+  }
+  .section5{
+    padding:5px;
+    border-radius:8px;
+    background-color:#eeeded9c;
+    position:relative;
+    top:-30vh;
+      color:rgb(45 73 86);
+      height:140px;width:300px;
+      span{
+          font-size:13px;
+          line-height: 1.2;
+          font-weight:bolder;
+      }
+  }
+  .multi2{
+    height: 60vh;
+      position: absolute;
+      bottom: 0;
+      transform: translateX(-55%);
+      bottom: -100vh;
+      bottom: -10vh;
+  }
+  .s1{
+        width: 20vw;
+        position: relative;
+    height: 10vh;
+    top: -3vh;
+    top: -24vh;
+    left: 35vh;
+    transform: rotate(30deg);
+  }
+}

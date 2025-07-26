@@ -1,0 +1,205 @@
+*{
+    font-family: 'Comic Sans MS', cursive, sans-serif !important;
+}
+.vvbook-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    align-content: center;
+    width: 100%;
+    height: 100vh;
+}
+
+.vvbook-page{
+    background-image: url('./static/vvbg2.png');
+    color:rgb(1, 60, 88);
+    border-radius: 10px;
+    /* background-image: url('./static/vvbg2.png'); */
+    background-size: cover;           /* Ensures it fills container */
+    background-position: center;      /* Always shows the center of the image */
+    background-repeat: no-repeat; 
+    background-color: rgb(253, 253, 253);
+    width: 100%;
+    height: 100%;
+    text-align: center;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    /* Optional: slight outer shadow for lift */
+    box-shadow: 0 28px 25px rgba(0, 0, 0, 0.372);
+}
+
+
+.vv{
+    border:4px dashed rgb(0, 88, 128);
+    border-radius:10%;
+    margin-top: 15vh;
+    height: 32vh;
+    width: 28vw;
+    z-index: 2;  /* Ensure content is above the shadow */
+}
+
+.epage2{
+    display:flex;
+    justify-items: center;
+}
+.vvdashed{
+    /* margin:2vh; */
+    height:auto;width:58vh;
+    border: 2px dashed rgb(0, 88, 128);
+    border-radius: 12px;  /* Use px for subtle rounding */
+    padding: 12px;
+  }
+  .about-heading {
+    margin-left:0px;
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    /* margin-bottom: 10px; */
+  }
+  .blur{
+    font-weight:bolder;
+    margin:2vh;
+    margin-top:10vh;
+    font-size:5vh;
+  }
+  .about-icon {
+    margin-right:0px;
+    width: 10vh;
+    height: 10vh;
+  }
+  
+  .vvabout-box {
+    border: 2px dashed #4B5563; /* Tailwind gray-700 equivalent */
+    padding: 20px;
+    border-radius: 12px;
+    background-color: #f4f4f4; 
+    font-family: 'Segoe UI', sans-serif;
+    color: #1F2937; /* text-gray-800 */
+    width:58vh;
+  }
+  /* .arrow1{
+    transform: rotate(180deg);
+  } */
+  .vvvideo{
+    border:4px solid rgb(53, 53, 53);
+    border-radius:18px;
+    /* margin-top:15vh; */
+  width:400px;
+height:230px;
+  }
+  .dashedpage4{
+    margin:1vh;
+    background-color: #f4f4f4;
+    height:auto;
+    width:auto;
+    border: 2px dashed rgb(0, 88, 128);
+    border-radius: 12px; 
+    padding: 12px;
+    text-align: justify;
+  }
+  .vvnote1{
+    left: -3vh;
+    top: -3vh;
+    width: 90%;
+    position:relative;
+    
+  }
+.vvpage1text{
+  margin:4vh;
+  font-size:3vh;
+}
+.vvdemodashed{
+  margin:1vh;
+      border:2px dashed rgb(0, 88, 128);
+    border-radius:10%;
+ height: auto;
+  width: fit-content;
+  font-size: 2vh;
+  background-color: white;
+  font-weight: bolder;
+}
+    .vvarrow1 {
+      top:12vh;
+        left: 7vw;
+        position: absolute;
+        width: 5vw;
+    }
+.page6content{
+      color: black;
+  text-align: left;
+  padding: 4vh;
+    }
+  @media screen and (max-width: 767px) and (orientation: portrait){
+    .page1, .page2, .page3, .page4, .page5, .page6, .page7{
+   display: flex !important;
+    flex-direction:column;
+    justify-content: center;
+    align-items: center;
+}
+.vvpage1text{
+  width:300px;
+  margin:4vh;
+  font-size:2.3vh;
+}
+.vv{
+  height:25vh;
+  width:75vw;
+}.about-heading{
+position: relative;
+left:40px;
+}
+.vvabout-box{
+  position:relative;
+  top:-5vh;
+width:40vh;
+font-size:2vh;
+}
+.vvvideo{
+  height:auto;
+  /* margin:7vh; */
+  width:280px;
+}
+.vvdemodashed{
+  margin:1vh;
+      border:2px dashed rgb(0, 88, 128);
+    border-radius:10%;
+ height: auto;
+  width: 55%;
+  font-size: 2vh;
+  padding:1vh;
+  background-color: white;
+  text-shadow:none;
+  font-weight: lighter;
+}
+.vvpage4head{
+  font-size:3vh;
+}
+    .vvarrow1 {
+      top:12vh;
+        left: 27vw;
+        position: absolute;
+        width: 25vw;
+    }
+    .dashedpage4{
+      width:55%;
+      font-size:2vh;
+    }
+    .vvnote1{
+
+      padding:1.7vh;
+      font-size:2vh;
+      left:-1vh;
+      width:50%;
+    }
+    .page6content{
+      margin:0;
+      width:60%;
+color: black;
+  text-align: left;
+  padding: 4vh;
+  padding-top:0;
+  
+    }
+  }

@@ -1,0 +1,85 @@
+/* Modal Overlay */
+.artOverlay {
+    position: fixed;
+    top: 0; left: 0; right: 0; bottom: 0;
+    background: rgba(0,0,0,0.5);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    z-index: 2000;
+  }
+  .hide-scrollbar {
+    overflow: auto;              /* Scroll is still active */
+    scrollbar-width: none;       /* For Firefox */
+    -ms-overflow-style: none;    /* For Internet Explorer and Edge */
+  }
+  
+  .hide-scrollbar::-webkit-scrollbar {
+    display: none;               /* For Chrome, Safari, and Opera */
+  }
+  /* Modal Box */
+  .artContainer {
+    background-color: #1e1e1e;
+    width: 80%;
+    max-width: 1100px;
+    height: 90vh;
+    border-radius: 8px;
+    display: flex;
+    flex-direction: column;
+  }
+  
+  /* Header */
+  .artHeader {
+    background-color: #2e2e2e;
+    padding: 10px 20px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    color: white;
+  }
+  
+  /* Close Button */
+  .fxCloseBtn {
+    background: none;
+    border: none;
+    color: white;
+    font-size: 20px;
+    cursor: pointer;
+    transition: transform 0.2s ease;
+  }
+  .fxCloseBtn:hover {
+    transform: scale(1.2);
+  }
+  
+  /* Body for scrolling masonry */
+  .artBody {
+    flex: 1;
+    overflow-y: auto;
+    padding: 20px;
+  }
+  
+  /* Masonry list container */
+  .list {
+    position: relative;
+    width: 100%;
+    min-height: 100%; 
+  }
+  
+  /* Each masonry box */
+  .item-wrapper {
+    position: absolute;
+    cursor: pointer;
+    border-radius: 8px;
+    overflow: hidden;
+    border: 2px solid rgba(0, 0, 0, 0);
+  }
+  
+  /* The image in each box */
+  .item-img {
+    width: 100%;
+    height: 100%;
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+  }
+  

@@ -1,0 +1,9 @@
+@media screen and (max-width: 767px) and (orientation: portrait){
+    .fxModalBody{
+        margin:0;
+        justify-content: center;
+    }
+    .iconBox{
+        margin:0;
+    }
+}

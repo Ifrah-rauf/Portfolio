@@ -1,0 +1,116 @@
+.chroma-grid {
+    position: relative;
+    display: grid;
+    grid-template-columns: 1fr; /* always one column */
+    grid-auto-rows: auto;
+    justify-content: center;
+    gap: 1rem;
+    /* width: 60vw; */
+    /* max-width: 800px; */
+    margin: 0 auto;
+    padding: 1rem;
+    height: 100vh;
+    overflow-y: auto;
+    scrollbar-width: none;       /* hide scrollbar Firefox */
+    -ms-overflow-style: none;    /* hide scrollbar IE */
+  }
+  .chroma-grid::-webkit-scrollbar {
+    display: none;               /* hide scrollbar Chrome/Safari */
+  }
+  
+  .chroma-card {
+    position: relative;
+    display: flex;
+    flex-direction: row;
+    width: 100%;
+    height: 40vh;
+    border-radius: 20px;
+    border: 1px solid #333;
+    background: var(--card-gradient);
+    transition: border-color 0.3s ease;
+    margin: 2rem auto;
+    overflow: hidden;
+  
+    /* --mouse-x: 50%; */
+    --mouse-y: 50%;
+    --spotlight-color: rgba(255, 255, 255, 0.3);
+  }
+  
+  .chroma-card:hover {
+    border-color: var(--card-border);
+  }
+  
+  .chroma-card::before {
+    content: "";
+    position: absolute;
+    inset: 0;
+    background: radial-gradient(
+      circle at var(--mouse-x) var(--mouse-y),
+      var(--spotlight-color),
+      transparent 70%
+    );
+    pointer-events: none;
+    opacity: 0;
+    transition: opacity 0.5s ease;
+    z-index: 2;
+  }
+  
+  .chroma-card:hover::before {
+    opacity: 1;
+  }
+  
+  .chroma-img-wrapper {
+    flex: 1;
+    padding: 10px;
+    box-sizing: border-box;
+    background: transparent;
+    transition: background 0.3s ease;
+  }
+  
+  .chroma-img-wrapper img {
+    width: 25vw;
+    height: 30vh;
+    object-fit: contain;
+    border-radius: 10px;
+    display: block;
+  }
+  
+  .chroma-info {
+    color: #fff;
+    font-family: system-ui, sans-serif;
+    padding: 1rem;
+    /* display: grid; */
+    gap: 0.5rem;
+  }
+  .chroma-card {
+    transition: transform 0.5s ease, opacity 0.5s ease;
+  }
+  
+  .chroma-card:hover {
+    transform: translateY(-5px) scale(1.02);
+    opacity: 0.95;
+  }
+  
+  .chroma-img-wrapper img {
+    transition: transform 0.5s ease;
+  }
+  
+  .chroma-card:hover .chroma-img-wrapper img {
+    transform: scale(1.05);
+  }
+  .vihaan{
+  visibility: hidden;opacity:0;
+  height:20px;
+  }
+  @media screen and (max-width: 767px) and (orientation: portrait){
+    .chroma-grid {
+      overflow-x: hidden;
+    width:80vw;
+    margin:0;
+
+    }
+ .vihaan{
+  visibility: hidden;opacity:0;
+  height:5px;
+  }
+  }

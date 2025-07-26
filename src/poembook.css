@@ -1,0 +1,238 @@
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+*{
+    font-family: 'Comic Sans MS', cursive, sans-serif !important;
+}
+.poembook-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    align-content: center;
+    width: 100%;
+    height: 100vh;
+    display: flex;
+
+}
+
+.poembook-page{
+    color:rgb(1, 60, 88);
+    border-radius: 10px;
+    background-image: url('./static/poemcover1.png');
+    background-size: cover;           /* Ensures it fills container */
+    background-position: center;      /* Always shows the center of the image */
+    background-repeat: no-repeat; 
+    background-color: rgb(253, 253, 253);
+    width: 100%;
+    height: 50vh;
+    text-align: center;
+    display: flex ;
+    justify-content: center;
+    align-items: center;
+    padding:2%;
+
+    /* Optional: slight outer shadow for lift */
+    box-shadow: 0 28px 25px rgba(0, 0, 0, 0.372);
+}
+.ppage2{
+    
+    background-image: url('./static/3.png');
+}
+.ppage3{
+    
+    background-image: url('./static/4.png');
+}
+.ppage3 p{
+    background-color:rgba(254, 251, 232, 0.56);
+    padding:1vh;
+}
+.ppage4{
+    
+    background-image: url('./static/5.png');
+}
+.ppage4 p{
+    background-color:rgba(254, 251, 232, 0.56);
+}
+.ppage5{
+    
+    background-image: url('./static/6.png');
+}
+.ppage5 p{
+    background-color:rgba(254, 251, 232, 0.56);
+}
+.ppage6{
+    
+    background-image: url('./static/7.png');
+}
+.ppage6 p{
+    background-color:rgba(254, 251, 232, 0.56);
+}
+.ppage7{
+    
+    background-image: url('./static/8.png');
+}
+.ppage7 p{
+    background-color:rgba(254, 251, 232, 0.56);
+}
+.ppage8{
+    
+    background-image: url('./static/9.png');
+}
+.ppage8 p{
+    background-color:rgba(254, 251, 232, 0.56);
+}
+.ppage9 p{
+    background-color:rgba(254, 251, 232, 0.56);
+}
+.ppage9{
+    
+    background-image: url('./static/10.png');
+}
+.ppage10 p{
+    background-color:rgba(254, 251, 232, 0.56);
+}
+.ppage10{
+    
+    background-image: url('./static/11.png');
+}
+.ppage11{
+    
+    background-image: url('./static/poemcover2.png');
+}
+.format{
+    color:black;
+    column-count: 2;          /* magazine style columns */
+  column-gap: 1rem;         /* space between columns */
+  max-width: 68ch;          /* readable line width overall */
+  margin: auto;             /* center it in page */
+  /* padding: 2rem;             */
+  line-height: 1.6;
+}
+.format2{
+    color:black;
+    column-count: 1;          /* magazine style columns */
+  column-gap: 1rem;         /* space between columns */
+  max-width: 68ch;          /* readable line width overall */
+  margin: auto;             /* center it in page */
+  padding: 2rem;            /* inner padding for whitespace */
+  line-height: 1.6;
+}
+.poem{
+    border:4px dashed rgb(0, 88, 128);
+    border-radius:10%;
+    margin-top: 15vh;
+    height: 32vh;
+    width: 28vw;
+    z-index: 2;  /* Ensure content is above the shadow */
+}
+
+.epage2{
+    display:flex;
+    justify-items: center;
+}
+.poemdashed{
+    /* margin:2vh; */
+    height:auto;width:58vh;
+    border: 2px dashed rgb(0, 88, 128);
+    border-radius: 12px;  /* Use px for subtle rounding */
+    padding: 12px;
+  }
+  .about-heading {
+    margin-left:0px;
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    /* margin-bottom: 10px; */
+  }
+  .blur{
+    font-weight:bolder;
+    margin:2vh;
+    margin-top:10vh;
+    font-size:5vh;
+  }
+  .about-icon {
+    margin-right:0px;
+    width: 10vh;
+    height: 10vh;
+  }
+  
+  .about-box {
+    border: 2px dashed #4B5563; /* Tailwind gray-700 equivalent */
+    padding: 20px;
+    border-radius: 12px;
+    background-color: #f4f4f4; 
+    font-family: 'Segoe UI', sans-serif;
+    color: #1F2937; /* text-gray-800 */
+    width:58vh;
+  }
+.ppage10head{
+    font-weight:bolder;
+    background-color:rgba(254, 251, 232, 0.56);
+}
+@media screen and (max-width: 767px) and (orientation: portrait){
+    .poembook-page{
+    width: 70%;
+    height: 40vh;
+}
+.ppage3 p{
+    background-color:rgba(254, 251, 232, 0.56);
+    padding:1vh;
+    font-size:15px;
+}
+.ppage10head{
+    font-weight:bolder;margin-left:14vh;
+    background-color:rgba(254, 251, 232, 0.56);
+    font-size:13px;width:300px;
+}
+.ppage10 p, .ppage1 p, .ppage2 p, .ppage3 p, .ppage4 p,.ppage10 p
+{
+    position:relative;
+    left:15vh;
+    width:280px;
+    background-color:rgba(254, 251, 232, 0.56);
+    padding:1vh;
+    font-size:12px;
+}
+.ppage6 p, .ppage7 p, .ppage8 p, .ppage9 p, .ppage5 p
+{
+    position:relative;
+    left:12vh;
+    width:280px;
+    background-color:rgba(254, 251, 232, 0.56);
+    padding:1vh;
+    font-size:12px;
+}
+/* .ppage10 p{
+    position:relative;
+    left:15vh;
+    width:280px;
+    background-color:rgba(254, 251, 232, 0.56);
+    padding:1vh;
+    font-size:12px;
+} */
+.ppage2 p{
+    top:-3vh;
+    font-size:11px;
+
+}
+.format{
+    color:black;
+    column-count: 1;         
+  column-gap: 0.5rem;         
+  width: 50ch;         
+  margin: auto;             
+  line-height: 1.6;
+}
+.format2{
+    column-count: 1;          
+  column-gap: 0.5rem;         
+  max-width: 50ch;          
+  margin: auto;            
+  line-height: 1.6;
+ /* font-size:12px; */
+
+}
+
+} 
