@@ -1,12 +1,10 @@
 import React from 'react';
 import HTMLFlipBook from 'react-pageflip';
 import './vvbook.css';
-import vvvideo from './static/vvvideo.mov'
 import vvlogo from './static/vvlogo2.png';
 import rise from './static/rise.png';
 import vvarrow from './static/arrowvv2.png';
 import one from './static/onetoone.png'
-import mov from './static/Englive.mov'
 import arrow from './static/arrow.png';
 import BlurText from "./BlurText";
 
