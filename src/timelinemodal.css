@@ -21,7 +21,7 @@
   .timeline-modal {
     background-color: #ededed;
     border-radius: 1rem;
-    padding: 2rem;
+    padding: 0.5rem;
     width: 68vw;
     max-height: 90vh;
     overflow-y: auto;
