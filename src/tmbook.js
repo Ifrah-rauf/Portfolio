@@ -3,7 +3,6 @@ import HTMLFlipBook from 'react-pageflip';
 import BlurText from "./BlurText";
 import './tmbook.css';
 import tmphoto from './static/tmphoto.png';
-import tmvideo from './static/tmvideo.MP4';
 import train from './static/train.png';
 import track1 from './static/track.png';
 import arrow from './static/arrow.png';
